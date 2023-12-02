@@ -1,0 +1,152 @@
+.customers {
+
+    padding-bottom: 80px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        margin-bottom: 80px;
+    }
+
+    &__item {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__img {
+            max-width: 106px;
+            height: 106px;
+            flex-shrink: 0;
+            margin-bottom: 32px;
+        }
+
+        &__title {
+            max-width: 328px;
+            color: #36536B;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: -0.138px;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            max-width: 328px;
+            color: #6C8294;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: -0.115px;
+        }
+    }
+
+    &__form__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        max-width: 445px;
+        color: #36536B;
+        font-family: "DM Serif Display";
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 56px;
+        letter-spacing: -0.369px;
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .customers {
+
+        padding-bottom: 100px;
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-bottom: 100px;
+        }
+
+        &__item {
+            justify-content: space-between;
+
+            &__img {
+                width: 88px;
+                height: 88px;
+            }
+
+            &__title {
+                max-width: 223px;
+            }
+
+            &__description {
+                max-width: 223px;
+            }
+        }
+
+        &__title {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .customers__form {
+        position: relative;
+        right: -88px;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .customers {
+        padding-top: 6px;
+        padding-bottom: 96px;
+
+        &__list {
+            margin-bottom: 96px;
+        }
+
+        &__item {
+
+            &__img {
+                max-width: 106px;
+                height: auto;
+                transform: scale(1.3);
+            }
+
+            &__title {
+                max-width: 350px;
+            }
+
+            &__description {
+                max-width: 350px;
+            }
+        }
+
+        &__form__block {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__title {
+            margin-bottom: 0;
+        }
+
+        &__form {
+            position: relative;
+            right: -170px;
+            margin-bottom: 0;
+        }
+    }
+}

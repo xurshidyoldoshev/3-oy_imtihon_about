@@ -1,0 +1,93 @@
+.easy {
+    background-color: #EDF3F8;
+    padding-top: 80px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__img {
+        max-width: 328px;
+        height: 209px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        box-shadow: 25px 25px 80px 0px rgba(54, 83, 107, 0.30);
+
+        &__block {
+            margin-bottom: 48px;
+        }
+    }
+
+    &__title {
+        min-width: 327px;
+        color: #36536B;
+        font-family: "DM Serif Display";
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: -0.277px;
+        margin-bottom: 24px;
+    }
+
+    &__description {
+        min-width: 328px;
+        color: #6C8294;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .easy {
+        padding-top: 100px;
+
+        &__img {
+            max-width: 391.725px;
+            height: 250px;
+        }
+
+        &__title {
+            max-width: 573px;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.369px;
+        }
+
+        &__description {
+            max-width: 573px;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .easy {
+        padding-top: 150px;
+
+        &__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        &__img {
+            max-width: 445px;
+            height: 284px;
+        }
+
+        &__title {
+            max-width: 445px;
+        }
+
+        &__description {
+            max-width: 445px;
+        }
+        &__img__block {
+            margin-bottom: 0;
+        }
+    }
+}
